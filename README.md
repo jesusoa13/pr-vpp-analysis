@@ -10,11 +10,11 @@ Automated half-hour scrapers for LUMA and Tesla energy data on macOS, plus a pol
 
 * **Scrapers** (every 30 minutes):
 
-    * **Tesla:** Powerwall stats + B**attery Power – Discharging**
+    * **Tesla:** Powerwall stats + **Battery Power – Discharging**
 
     * **LUMA:** Supply by generation plant and source_tab (Base / Pico / Renovable)
 
-* **Notebook:** type-clean, de-duplicate intrahour rows (earliest minute per hour), aggregate by hour, and plot.
+* **Notebook:** type-clean, de-duplicate intra-hour rows (earliest minute per hour), aggregate by hour, and plot.
 
 * **Outputs:** clean PNG/SVG charts, saved to `06_outputs/02_plots/`.
 
@@ -94,7 +94,7 @@ Expected results:
 
 1. **Open the crontab editor**
 ```bash
-crontab - e
+crontab -e
 ```
 
 2. **Add the following line to run the scraper every 30 minutes**
@@ -141,7 +141,7 @@ caffeinate -dimsu &
     do shell script "caffeinate -dimsu &"
     ```
 
-3. Save as: `KeepMacAwake.app` in inside the project folder.
+3. Save as: `KeepMacAwake.app` inside the project folder.
 
 4. Enable it via:  
 
@@ -170,7 +170,7 @@ Then notebook:
 > Visual style: light grey for Base, dark blue for Peak, dark orange for Renewable, accent for VPP; white background; no chart junk.
 
 ## 📝 Notes on method
-* **Intrahour handling:** keep the **earliest minute** per hour to avoid double-counting (scrapers run every 30 minutes).
+* **Intra-hour handling:** keep the **earliest minute** per hour to avoid double-counting (scrapers run every 30 minutes).
 
 * **Coverage check:** both sources must have at least one record per hour in the shared window; **today** is ignored.
 
@@ -189,6 +189,7 @@ Then notebook:
 
 ## 🔒 Data & License
 * Data from public dashboards; this repo is **not affiliated** with LUMA or Tesla.
+* Code licensed under MIT (see LICENSE).
 
 ## 👨🏽‍💻 Author
 Maintained by Jesús Ortiz

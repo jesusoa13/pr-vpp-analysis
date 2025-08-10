@@ -1,4 +1,4 @@
-# ⚡ Puerto Rico Energy Scrappers & VPP Analysis
+# ⚡ Puerto Rico Energy Scrapers & VPP Analysis
 
 Automated half-hour scrapers for LUMA and Tesla energy data on macOS, plus a polars notebook that builds presentation-grade charts:
 * Daily stacked supply (Base / Peak / Renewable / VPP Discharge)

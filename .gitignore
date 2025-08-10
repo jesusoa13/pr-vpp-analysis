@@ -1,0 +1,6 @@
+01_data/
+04_logs/
+*.parquet
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/

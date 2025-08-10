@@ -178,6 +178,8 @@ Then notebook:
 
 * **Rounding:** values shown as whole MW for clarity.
 
+* **Timestamp note (Tesla):** The public dashboard updates roughly every 15 minutes and often lags real time by ~15 minutes. My scraper runs at :00 and :30 and, for each hour, keeps the earliest reading available (≈ :00 or :15). As a result, the “peak” time shown is approximate to the nearest 15 minutes.
+
 ## 🛠️ Troubleshooting
 
 **No new logs or data?**
